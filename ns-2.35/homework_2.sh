@@ -7,13 +7,9 @@ for (( i=1; i<=$num_times; i++ ))
 do
  echo "Running: $i of $num_times with size $packet_size"
  echo "actual size: $packet_size"
-  ns MCS_8001_example1.tcl $packet_size
+  ns MCS_8001_example6_fourNodes_UDPCBR_TCPFTP_trace.tcl $packet_size
  packet_size=$(($packet_size * $counter))
  echo "-------------------------"
  # run simulator
-
- 
-
-
  
 done
